@@ -1,0 +1,61 @@
+
+.controls__nav-slider {
+
+  position: absolute;
+  bottom: 40%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 1000;
+
+  @media (min-width: $sm-tablet-width) {
+
+    bottom: calc(50% - 20px);
+  }
+
+  @media (min-width: $sm-desktop-width) {
+
+    bottom: calc(50% - 10px);
+  }
+}
+
+.slick-dots {
+
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0 25px 0;
+  column-gap: 10px;
+  row-gap: 40px;
+
+  li {
+
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: $special-light_mint;
+    transition: all 0.3s;
+
+    button {
+
+      position: absolute;
+      top: -15px;
+      left: 0;
+      font-size: 0;
+      padding: 20px 40px;
+      cursor: pointer;
+      pointer-events: all;
+    }
+  }
+
+  .slick-active {
+
+    height: 10px;
+    width: 80px;
+    border-radius: 10px;
+    background: $special-mint;
+  }
+}

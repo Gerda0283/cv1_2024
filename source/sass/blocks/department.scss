@@ -1,0 +1,31 @@
+
+.department__cell {
+  display: block;
+  margin-bottom: 14px;
+
+  b {
+    color: $basic-black;
+    font-family: "Montserrat";
+    font-weight: 700;
+  }
+}
+
+.department__date {
+
+  margin-top: 15px;
+  color: $basic-light_grey;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.department--noindent {
+
+  p {
+    @include noindent;
+  }
+}
+
+.department--about-project {
+
+  padding-top: 1rem;
+}

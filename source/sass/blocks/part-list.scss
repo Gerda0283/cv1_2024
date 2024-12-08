@@ -1,0 +1,23 @@
+.part-list {
+
+  padding-left: 16px;
+}
+
+.part-list__item {
+
+  position: relative;
+  list-style-type: none;
+
+  &::before {
+
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -16px;
+    right: 12px;
+    height: 2px;
+    width: 8px;
+    border-radius: 1px;
+    background-color: $basic-white;
+  }
+}

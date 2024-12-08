@@ -1,0 +1,21 @@
+.portrait {
+
+  display: none;
+  order: 1;
+
+  @media (min-width: $sm-desktop-width) {
+
+    display: block;
+  }
+}
+
+.portrait__img {
+
+  @media (min-width: $tablet-width) {
+
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+    object-fit: contain;
+  }
+}

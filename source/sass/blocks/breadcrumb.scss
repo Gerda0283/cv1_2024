@@ -1,0 +1,40 @@
+.breadcrumb {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  padding-left: 0;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+.breadcrumb__item {
+
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  min-width: 75px;
+  list-style-type: none;
+
+  &::after {
+
+    content: "/";
+    width: 28px;
+    padding-left: 10px;
+  }
+}
+
+.breadcrumb__item:last-child {
+
+  text-transform: uppercase;
+
+  a {
+
+    color: $basic-black;
+  }
+
+  &::after {
+
+    content: "";
+  }
+}

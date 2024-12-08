@@ -1,0 +1,35 @@
+.portfolio-main-slider {
+  position: relative;
+  padding-top: 1.7857rem;
+  display: flex;
+  justify-content: center;
+  /*For vertical slides*/
+  /*.slick-track {
+
+    display: block;
+  }
+
+  .slider-nav__item {
+
+    height: 600px;
+  }*/
+}
+
+.portfolio-main-slider__item {
+  text-align: center;
+}
+
+/* the slides */
+.slick-slide {
+  margin: 0 10px;
+}
+
+/* the parent */
+.slick-list {
+  margin: 0 -10px;
+}
+
+.slick-disabled {
+  visibility: hidden;
+  opacity: 0;
+}/*# sourceMappingURL=portfolio-main-slider.css.map */

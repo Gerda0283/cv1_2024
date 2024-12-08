@@ -1,0 +1,217 @@
+
+.headline {
+
+  color: $basic-black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.headline--main {
+
+  font-size: 1.7143rem;
+  text-align: center;
+
+  @media (min-width: $sm-tablet-width) {
+
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+
+    font-size: 2.8571rem;
+    line-height: 3.9286rem;
+  }
+}
+
+.headline--second {
+
+  font-size: 1.1429rem;
+  line-height: 1.4286rem;
+  margin-bottom: 0.7143rem;
+
+  b {
+
+    color: $basic-mint;
+    text-transform: uppercase;
+  }
+}
+
+.headline--third {
+
+  @media (min-width: $desktop-width) {
+
+    font-size: 1.5714rem;
+    line-height: 1.5;
+  }
+}
+
+.headline--forth {
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  b {
+
+    color: $basic-mint;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: $desktop-width) {
+
+    font-size: 1.1429rem;
+    line-height: 1.4286rem;
+  }
+}
+
+.headline-fifth {
+
+  margin-top: 0.7143rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+
+  @media (min-width: $desktop-width) {
+
+    font-size: 1rem;
+    line-height: 1.2143rem;
+  }
+}
+
+.headline--bio {
+
+  position: relative;
+  color: $basic-white;
+  column-span: all;
+  z-index: 1;
+
+  &:first-of-type {
+
+    margin-top: 0;
+  }
+
+  @media (min-width: $sm-tablet-width) {
+
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      top: 5px;
+      left: 0;
+      width: calc(100%/3.7);
+      height: 30px;
+      background-color: $special-extra_light_mint;
+      z-index: -1;
+    }
+
+    &::after {
+
+      position: absolute;
+      display: block;
+      content: "";
+      top: 49%;
+      right: 0;
+      height: 1px;
+      width: 100%;
+      background-image: linear-gradient(to right, $basic-mint-alfa 10%, $special-light_mint 100%);
+      background-size: left top / 100%;
+      background-repeat: no-repeat;
+      z-index: -2;
+    }
+  }
+
+  @media (min-width: $sm-desktop-width) {
+
+    &::before {
+
+      display: none;
+    }
+
+    &::after {
+
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+
+    &:first-of-type {
+
+      margin-top: 25px;
+    }
+  }
+}
+
+.part--inner-headline {
+
+  @media (min-width: $sm-desktop-width) {
+
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      top: 5px;
+      left: 0;
+      width: calc(100%/3.7);
+      height: 30px;
+      background-color: $special-extra_light_mint;
+      z-index: -1;
+    }
+
+    &::after {
+
+      position: absolute;
+      display: block;
+      content: "";
+      top: 49%;
+      right: 0;
+      height: 1px;
+      width: 100%;
+      background-image: linear-gradient(to right, $basic-mint-alfa 10%, $special-light_mint 100%);
+      background-size: left top / 100%;
+      background-repeat: no-repeat;
+      z-index: -2;
+    }
+  }
+}
+
+
+.headline--bio:first-of-type::after {
+
+  display: none;
+}
+
+.headline--inner {
+
+  b {
+
+    color: $basic-mint;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: $desktop-width) {
+
+    font-size: 22px;
+    line-height: 27px;
+  }
+}
+
+
+.headline--descript {
+
+  b {
+
+    text-transform: none;
+  }
+}
+
+.headline--job-type {
+
+  font-family: "E-Ukraine", sans-serif;
+  margin-bottom: 15px;
+  color: $basic-light_grey;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+}

@@ -1,0 +1,40 @@
+.page__body {
+
+  display: block;
+  color: $basic-dark_grey;
+  font-family: "E-Ukraine", sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 300;
+  background-color: $basic-grey;
+}
+
+.page__wrapper {
+
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+
+  @media (min-width: $sm-desktop-width) {
+
+    width:90%;
+    margin: 40px auto;
+    flex-direction: row-reverse;
+  }
+}
+
+.content--inner {
+
+  @media (min-width: $sm-desktop-width){
+
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+
+    margin: 0 auto;
+    flex-direction: column;
+  }
+}

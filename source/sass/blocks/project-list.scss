@@ -1,0 +1,25 @@
+.project-list {
+
+  padding-left: 0;
+  counter-reset: num;
+}
+
+.project-list__item {
+
+  position: relative;
+  list-style-type: none;
+
+  &::before {
+
+    content: counter(num)".";
+    counter-increment: num;
+    color: $basic-black;
+    padding-right: 12px;
+    font-weight: 700;
+  }
+
+  span {
+
+    color: $basic-black;
+  }
+}

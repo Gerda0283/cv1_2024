@@ -1,0 +1,78 @@
+
+.control {
+
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  z-index: 1;
+  font-size: 0;
+  width: 60px;
+  height: 60px;
+  background-color: #9cebd5;
+  border: 2px inset $basic-mint-alfa;
+  transition: all 0.5s;
+  border-radius: 0.2857rem;
+  opacity: 0.6;
+
+  @media (min-width: $sm-desktop-over-width) {
+
+    border: none;
+  }
+
+  .control__prev {
+
+    align-self: center;
+    content: '';
+    background: url('../img/svg/slide_next.svg') center center / 100% no-repeat;
+    transform: rotate(180deg);
+    width: 14px;
+    height: 28px;
+    z-index: 2;
+    opacity: 0.9;
+  }
+
+  .control__next {
+
+    align-self: center;
+    content: '';
+    background: url('../img/svg/slide_next.svg') center center / 100% no-repeat;
+    width: 14px;
+    height: 28px;
+    z-index: 2;
+    opacity: 0.9;
+  }
+}
+
+.control--prev {
+
+  left: 0;
+}
+
+.control--next {
+
+  right: 0;
+}
+
+.control:hover, .control:focus, .control.active {
+  background-color: $special-mint;
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.control:hover .control__prev, .control:hover .control__next,
+.control:focus .control__prev, .control:focus .control__next,
+.control.active .control__prev, .control.active .control__next {
+
+  opacity:1
+}
+
+.slick-arrow {
+
+  font-size: 0;
+}
+
+button.slick-disabled {
+	opacity: 0;
+  visibility: hidden;
+}

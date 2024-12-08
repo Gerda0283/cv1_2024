@@ -1,0 +1,17 @@
+
+.portfolio-description {
+
+  p {
+
+    text-indent: 0;
+  }
+
+  padding: 20px;
+
+  @media (min-width: $sm-desktop-over-width) {
+
+    width: calc(100%/2.5 - 20px/2.5);
+    min-height: 100%;
+  }
+
+}

@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+p {
+  margin: 0;
+  text-indent: 1.5rem;
+}
+
+a {
+  color: $basic-mint;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+
+  &:hover, &:focus {
+
+    color: $special-extra_light_mint;
+    opacity: 0.75;
+  }
+
+  &:active {
+
+    color: $special-extra_light_mint;
+    opacity: 0.5;
+  }
+}
+
+button {
+
+  border: none;
+  background-color: transparent;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+em {
+  font-family: "Montserrat";
+  font-size: 1.1em;
+  font-style: italic;
+  font-weight: 300;
+}

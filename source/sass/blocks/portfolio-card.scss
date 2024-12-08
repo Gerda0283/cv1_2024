@@ -1,0 +1,84 @@
+
+.portfolio-card {
+
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  flex-direction: column;
+  width: 100%;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+
+  &:nth-child(even) {
+
+    .portfolio-card__frame {
+
+      @media (min-width: $sm-tablet-width) {
+
+        order: 1;
+      }
+    }
+
+    .portfolio-card__info {
+
+      @media (min-width: $sm-tablet-width) {
+
+        order: 2;
+      }
+    }
+  }
+
+  &:nth-child(odd) {
+
+    .portfolio-card__frame {
+
+      @media (min-width: $sm-tablet-width) {
+
+        order: 2;
+        justify-self: flex-end;
+      }
+    }
+
+    .portfolio-card__info {
+
+      @media (min-width: $sm-tablet-width) {
+
+        order: 1;
+      }
+    }
+  }
+
+  &:hover {
+
+    box-shadow: none;
+    transition: all ease-in-out 0.75s;
+  }
+
+  @media (min-width: $sm-tablet-width) {
+
+    width: calc(100%/2.2 - 20px/2.2);
+  }
+
+  @media (min-width: $sm-desktop-over-width) {
+
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+  }
+}
+
+.portfolio-card__frame {
+
+  width: 100%;
+
+  @media (min-width: $sm-desktop-over-width) {
+
+    width: calc(100%/2 - 20px/2);
+  }
+
+  img {
+
+    @media (min-width: $sm-tablet-width) {
+      min-height: 100%;
+    }
+  }
+}

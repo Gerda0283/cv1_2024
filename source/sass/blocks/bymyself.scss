@@ -1,0 +1,7 @@
+
+.bymyself {
+
+  @media (min-width: $mobile-width) and (max-width: $tablet-width)  {
+    order: 4;
+  }
+}

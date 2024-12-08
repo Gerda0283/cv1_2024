@@ -1,0 +1,7 @@
+.projects-content {
+  display: flex;
+  justify-content: space-around;
+  row-gap: 35px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}/*# sourceMappingURL=projects-content.css.map */

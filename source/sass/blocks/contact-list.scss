@@ -1,0 +1,38 @@
+.contact-list {
+
+  padding-left: 0;
+}
+
+.contact-list__item {
+  list-style-type: none;
+  font-family: "Montserrat";
+  font-size: 1.1428571428571428rem;
+
+  b {
+    font-weight: 700;
+    letter-spacing: 0.05357142857142857rem;
+  }
+}
+
+.contact-list__link {
+
+  color: $basic-white;
+
+  &:hover {
+
+    color: $basic-white;
+    opacity: 50%;
+  }
+
+  &:focus {
+
+    color: $basic-white;
+    opacity: 50%;
+  }
+
+  &:active {
+
+    color: $basic-white;
+    opacity: 50%;
+  }
+}

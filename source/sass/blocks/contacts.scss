@@ -1,0 +1,6 @@
+.contacts {
+
+  @media (min-width: $mobile-width) and (max-width: $sm-desktop-width-only)  {
+    order: 5;
+  }
+}

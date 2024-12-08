@@ -1,0 +1,62 @@
+
+.filter {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+  row-gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter__item {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 25px;
+  color: $basic-dark_grey;
+  background-color: $basic-white;
+  font-size: 0.86rem;
+  letter-spacing: 1px;
+  line-height: 2;
+  border-radius: 0;
+  z-index: 0;
+
+  &::after {
+
+    position: absolute;
+    content: "";
+    bottom: 5px;
+    width: 10px;
+    height: 4px;
+    background-color:  $special-light_mint;
+    border-radius: 2px;
+    transition: all 0.3s;
+  }
+
+  &:hover,
+  &:focus {
+
+    color: $basic-black;
+  }
+
+  &:hover::after,
+  &:focus::after,
+  &:active::after {
+
+    width: 50%;
+    background-color:  $special-mint;
+  }
+}
+
+.is-chacked {
+
+  color: $basic-black;
+}
+
+.is-chacked::after {
+
+  width: 50%;
+  background-color:  $special-mint;
+}

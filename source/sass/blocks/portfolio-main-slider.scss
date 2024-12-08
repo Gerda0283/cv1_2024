@@ -1,0 +1,49 @@
+
+.portfolio-main-slider {
+
+  position: relative;
+  padding-top: 1.7857rem;
+  display: flex;
+  justify-content: center;
+
+  // @media (min-width: $sm-desktop-width) {
+
+  //   .slick-list {
+
+  //     // flex-basis: 80%;
+  //   }
+  //   // padding: 0px 60px;
+  // }
+
+  /*For vertical slides*/
+
+  /*.slick-track {
+
+    display: block;
+  }
+
+  .slider-nav__item {
+
+    height: 600px;
+  }*/
+
+}
+
+.portfolio-main-slider__item {
+
+  text-align: center;
+}
+
+/* the slides */
+.slick-slide {
+  margin: 0 10px;
+}
+/* the parent */
+.slick-list {
+  margin: 0 -10px;
+}
+
+.slick-disabled {
+  visibility: hidden;
+  opacity: 0;
+}
