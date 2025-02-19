@@ -577,7 +577,7 @@ em {
 @media (min-width: 1200px) {
   .headline--third {
     font-size: 1.5714rem;
-    line-height: 2;
+    line-height: 1.5;
   }
 }
 
